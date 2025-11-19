@@ -60,3 +60,6 @@ temp/
 # Model checkpoints
 *.pt
 *.pth
+
+# Test Results
+tests/integration/results/

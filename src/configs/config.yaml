@@ -1,0 +1,19 @@
+paths:
+  model_dir: "model/scGPT"
+  data_dir: "data/processed"
+  test_file: "test.h5ad"
+  train_file: "train.h5ad"
+  output_dir: "results"
+
+model:
+  pad_token: "<pad>"
+  pad_value: 0
+  max_seq_len: 1200
+  include_zero_gene: "batch-wise" # "all" or "batch-wise"
+
+inference:
+  batch_size: 32
+  eval_batch_size: 32
+  seed: 42
+  control_target_gene: "non-targeting"
+
